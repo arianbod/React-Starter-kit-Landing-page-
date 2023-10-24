@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
 import data from '../data/en.json';
+import Social from './Social';
+import NavLink from './NavLink';
 const Navbar = () => {
     const { navLinks, iconData } = data;
 
@@ -19,10 +21,7 @@ const Navbar = () => {
                         {
                             navLinks.map((link, index) => {
                                 return (
-                                    <li key={link.id}>
-                                        <a href={link.path} className="nav-link"> {link.text} </a>
-                                    </li>
-
+                                    <NavLink key={link.id} {...link} itemClass="nav-link" />
                                 )
                             })
                         }
@@ -33,10 +32,8 @@ const Navbar = () => {
                     <ul className="nav-icons">
                         {iconData.map((social, index) =>
                         (
-                            <li key={social.id}>
-                                <a href={social.href} target="_blank" className="nav-icon" rel="noreferrer"
-                                ><i className={social.iconClass}></i></a>
-                            </li>
+
+                            <Social key={social.id} {...social} parentClassName="nav-icon" />
 
                         ))}
 
