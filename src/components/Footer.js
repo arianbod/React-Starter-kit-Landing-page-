@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../data/en.json'
 import Social from './Social'
+import NavLink from './NavLink'
 const Footer = () => {
     const { navLinks, iconData } = data
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
             <ul className="footer-links">
                 {navLinks.map((link, index) => {
                     return (
-                        <navLinks key={link.id} {...link} itemClass="footer-link" />
+                        <NavLink key={link.id} {...link} itemClass="footer-link" />
 
                     )
                 })}

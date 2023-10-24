@@ -12,7 +12,7 @@ const Tours = () => {
     const { tours } = data
     const images = [tourImage1, tourImage2, tourImage3, tourImage4];
     return (
-        <section classNameName="section" id="tours">
+        <section className="section" id="tours">
             <Title titlePart1="featured" titlePart2="tours" />
             <section className="section" id="tours">
                 <div className="section-center featured-center">

@@ -1,7 +1,6 @@
 import React from 'react'
 import aboutImg from '../assets/images/about.jpeg'
 import Title from './Title'
-import data from '../data/en.json'
 const About = () => {
 
     return (
@@ -27,7 +26,7 @@ const About = () => {
                         quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
                         unde dolor?
                     </p>
-                    <a href="#" className="btn">read more</a>
+                    <a href="#about" className="btn">read more</a>
                 </article>
             </div>
         </section>
