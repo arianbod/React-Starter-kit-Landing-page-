@@ -14,10 +14,6 @@ const Tours = () => {
         <section classNameName="section" id="tours">
             <Title titlePart1="featured" titlePart2="tours" />
             <section className="section" id="tours">
-                <div className="section-title">
-                    <h2>featured <span>tours</span></h2>
-                </div>
-
                 <div className="section-center featured-center">
 
                     {tours.map((tour, index) => {
